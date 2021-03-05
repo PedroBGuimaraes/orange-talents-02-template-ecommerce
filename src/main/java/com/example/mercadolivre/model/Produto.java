@@ -52,7 +52,6 @@ public class Produto {
 	@OrderBy("titulo asc")
 	private SortedSet<Pergunta> perguntas = new TreeSet();
 	
-	
 	@Deprecated
 	public Produto() {
 	}

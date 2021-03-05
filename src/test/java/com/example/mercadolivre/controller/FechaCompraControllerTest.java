@@ -28,7 +28,7 @@ class FechaCompraControllerTest {
 				new NovaCaracteristicaRequest("Key2", "value2"),
 				new NovaCaracteristicaRequest("Key3", "value3"));
 		
-		Categoria categoria = new Categoria("categoria");
+		Categoria categoria = new Categoria("categoria", null);
 		Usuario dono = new Usuario("email@email.com.br",new SenhaLimpa("123456"));
 		Produto produto = new Produto("nome", new BigDecimal(10), 10, "descricao", categoria, caracteristicas, dono);
 		
@@ -44,7 +44,7 @@ class FechaCompraControllerTest {
 				new NovaCaracteristicaRequest("Key2", "value2"),
 				new NovaCaracteristicaRequest("Key3", "value3"));
 		
-		Categoria categoria = new Categoria("categoria");
+		Categoria categoria = new Categoria("categoria", null);
 		Usuario dono = new Usuario("email@email.com.br",new SenhaLimpa("123456"));
 		Produto produto = new Produto("nome", new BigDecimal(10), estoque, "descricao", categoria, caracteristicas, dono);
 		boolean resultado = produto.abateEstoque(quantidadePedida);
